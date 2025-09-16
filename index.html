@@ -117,10 +117,9 @@
                     <div class="col-lg-8 pt-4 pt-lg-0 content">
                         <h3> Développeur web</h3>
                         <p class="fst-italic">
-                            Bonjour. Je m'appelle Léo Trentesaux et je suis en bachelor d'informatique option développement à
-                            la Sup de Vinci de Rennes.
+                            Bonjour. Je m'appelle Léo Trentesaux et je suis à la recherche d'une alternance pour mon Mastère Développeur Full-Stack.
                             <br> Je suis passé par un BTS SIO (Services Informatiques aux
-                            Organisations) option SLAM (Solutions Logicielles et Applications Métiers). <br>
+                            Organisations) option SLAM (Solutions Logicielles et Applications Métiers) puis par un Bachelor Informatique option Développement. <br>
                         </p>
                         <div class="row">
                             <div class="col-lg-6">
@@ -140,7 +139,7 @@
                                     <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
                                         <span>leo.trentesaux53@gmail.com</span>
                                     </li>
-                                    <li><i class="bi bi-chevron-right"></i> <strong>Formation:</strong> <span>Bachelor Informatique option Développement (Sup de Vinci Rennes)</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Formation:</strong> <span>Mastère Développeur Full-Stack (Sup de Vinci Rennes)</span></li>
                                     
                                     <!--<li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>-->
                                 </ul>
@@ -202,6 +201,11 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <h3 class="resume-title">Formations</h3>
+                        <div class="resume-item">
+                            <h4>Mastère Informatique option Développement</h4>
+                            <h5>2025 - 2027</h5>
+                            <p><em>Sup de Vinci, Rennes</em></p>
+                        </div>
                         <div class="resume-item">
                             <h4>Bachelor Informatique option Développement</h4>
                             <h5>2024 - 2025</h5>
@@ -338,144 +342,7 @@
 
     <script src="assets/js/main.js"></script>
 
-    <script>
-        // Tableau des compétences et de leurs niveaux
-        const skills = [
-            { name: "PHP/Symfony", value: 80 },
-            { name: "JavaScript", value: 40 },
-            { name: "Angular", value: 70 },
-            { name: "Node.JS", value: 70 },
-        ];
-
-        const skillsContainer = document.getElementById("skills-web");
-
-        // Générer les divs automatiquement
-        skills.forEach(skill => {
-            // Ajouter une nouvelle colonne pour chaque compétence
-            const skillDiv = document.createElement("div");
-            skillDiv.className = "col-lg-6";
-
-            skillDiv.innerHTML = `
-            <div class="progress">
-              <span class="skill">${skill.name} <i class="val">${skill.value}%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="${skill.value}" aria-valuemin="0" aria-valuemax="100" style="width: ${skill.value}%;"></div>
-              </div>
-            </div>
-          `;
-
-            // Ajouter les divs dans le container
-            skillsContainer.appendChild(skillDiv);
-        });
-
-
-        // Tableau des compétences et de leurs niveaux
-        const skills2 = [
-
-            { name: "MySQL", value: 50 },
-            { name: "Merise (1&2)", value: 50 }
-        ];
-
-        const skills2Container = document.getElementById("skills-bdd");
-
-        skills2.forEach(skill => {
-            // Ajouter une nouvelle colonne pour chaque compétence
-            const skillDiv = document.createElement("div");
-            skillDiv.className = "col-lg-6";
-
-            skillDiv.innerHTML = `
-            <div class="progress">
-              <span class="skill">${skill.name} <i class="val">${skill.value}%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="${skill.value}" aria-valuemin="0" aria-valuemax="100" style="width: ${skill.value}%;"></div>
-              </div>
-            </div>
-          `;
-
-            // Ajouter les divs dans le container
-            skills2Container.appendChild(skillDiv);
-        });
-
-        // Tableau des compétences et de leurs niveaux
-        const skills3 = [
-
-            { name: "C#", value: 50 },
-            { name: "Java", value: 50 }
-        ];
-
-        const skills3Container = document.getElementById("skills-appli");
-
-        skills3.forEach(skill => {
-            // Ajouter une nouvelle colonne pour chaque compétence
-            const skillDiv = document.createElement("div");
-            skillDiv.className = "col-lg-6";
-
-            skillDiv.innerHTML = `
-            <div class="progress">
-              <span class="skill">${skill.name} <i class="val">${skill.value}%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="${skill.value}" aria-valuemin="0" aria-valuemax="100" style="width: ${skill.value}%;"></div>
-              </div>
-            </div>
-          `;
-
-            // Ajouter les divs dans le container
-            skills3Container.appendChild(skillDiv);
-        });
-
-        // Tableau des compétences et de leurs niveaux
-        const skills4 = [
-
-            { name: "Unity", value: 40 },
-        ];
-
-        const skills4Container = document.getElementById("skills-jv");
-
-        skills4.forEach(skill => {
-            // Ajouter une nouvelle colonne pour chaque compétence
-            const skillDiv = document.createElement("div");
-            skillDiv.className = "col-lg-6";
-
-            skillDiv.innerHTML = `
-            <div class="progress">
-              <span class="skill">${skill.name} <i class="val">${skill.value}%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="${skill.value}" aria-valuemin="0" aria-valuemax="100" style="width: ${skill.value}%;"></div>
-              </div>
-            </div>
-          `;
-
-            // Ajouter les divs dans le container
-            skills4Container.appendChild(skillDiv);
-        });
-
-        // Tableau des compétences et de leurs niveaux
-        const skills5 = [
-
-            { name: "Ios", value: 50 },
-            { name: "Android", value: 50 }
-        ];
-
-        const skills5Container = document.getElementById("skills-mobile");
-
-        skills5.forEach(skill => {
-            // Ajouter une nouvelle colonne pour chaque compétence
-            const skillDiv = document.createElement("div");
-            skillDiv.className = "col-lg-6";
-
-            skillDiv.innerHTML = `
-            <div class="progress">
-              <span class="skill">${skill.name} <i class="val">${skill.value}%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="${skill.value}" aria-valuemin="0" aria-valuemax="100" style="width: ${skill.value}%;"></div>
-              </div>
-            </div>
-          `;
-
-            // Ajouter les divs dans le container
-            skills5Container.appendChild(skillDiv);
-        });
-    </script>
+    <script src="assets/js/portfolio.js"></script>
 
 
 
